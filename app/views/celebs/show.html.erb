@@ -1,0 +1,59 @@
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+</div>
+
+<h1 class="h1-show"><%= @celeb.name%></h1>
+
+<h2 class="h2-show"><strong><%= @celeb.name%></strong> posted this the <strong><%= @celeb.date %></h2></strong>
+
+
+
+
+
+<div class="img-show">
+<div class="row">
+<div class="col-lg-12">
+    <% if @celeb.photo.attached? %>
+    <%= cl_image_tag @celeb.photo.key, class: "d-block w-100 h-100", crop: 'fill' %>
+    <% end %>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<h2 class="h2-show">Get your Items here :</h2>
+
+<h3 class="h3-show"><%= @celeb.shop_title%></h3>
+
+<%= auto_link(@celeb.description) %>
+
+<h3 class="h3-show"><%= @celeb.title_link2%></h3>
+
+<%= auto_link(@celeb.description_link2) %>
+
+<h3 class="h3-show"><%= @celeb.title_link3%></h3>
+
+<%= auto_link(@celeb.description_link3) %>
+
+<h3 class="h3-show"><%= @celeb.title_link4%></h3>
+
+<%= auto_link(@celeb.description_link4) %>
+
+<h3 class="h3-show"><%= @celeb.title_link5%></h3>
+
+<%= auto_link(@celeb.description_link5) %>
+
+<h3 class="h3-show"><%= @celeb.title_link6%></h3>
+
+<%= auto_link(@celeb.description_link6) %>
+
+<h3 class="h3-show"><%= @celeb.title_link7%></h3>
+
+<%= auto_link(@celeb.description_link7) %>
+
+<h3 class="h3-show"><%= @celeb.title_link8%></h3>
+
+<%= auto_link(@celeb.description_link8) %>
+
