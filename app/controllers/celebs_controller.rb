@@ -1,6 +1,7 @@
 class CelebsController < ApplicationController
     
-    before_action :set_celeb, only: [:show]
+    skip_before_action :authenticate_user!, :raise => false
+    http_basic_authenticate_with :name => 'FelixxFel', :password => 'Jordanshacker1710.shivflex.2020', only: :new
 
     def index
       if params[:search_by_name_and_date].nil? || params[:search_by_name_and_date].empty?
@@ -40,7 +41,7 @@ class CelebsController < ApplicationController
     
     def destroy
       @celeb.destroy
-      redirect_to celeb_path
+      redirect_to celebs_path
     end
 
    
