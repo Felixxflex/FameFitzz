@@ -57,7 +57,7 @@ class CelebsController < ApplicationController
     private
   
   def set_celeb
-    @celeb = Celeb.find(params[:id])
+    @celeb = Celeb.find(params[:id])   
   end
   
   def celeb_params
