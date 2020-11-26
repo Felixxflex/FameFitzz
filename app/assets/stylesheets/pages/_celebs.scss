@@ -40,12 +40,11 @@
     justify-content: center;
 }
 
-.link a {
+a {
     color: whitesmoke;
     justify-content: center;
     z-index: 100;
     position: relative;
-    margin-left: 31rem;
 }
 
 .flex-1 {
@@ -66,14 +65,15 @@
 }
 
 .indexpics {
-    height: 20rem;
+    height: 22rem;
     margin-top: 5rem;
-    width: 24rem;
+    width: 40rem;
     margin-bottom: 1rem;
+    margin-left: -3rem;
 }
 
 .title-info {
-    margin-left: 5rem;
+    margin-left: 10rem;
     z-index: 100;
     position: relative;
 }
@@ -117,5 +117,11 @@
 
 .offers.index {
     display: grid;
-    grid-template-columns: 370px 370px 370px;
+    grid-template-columns: 650px 650px;
+}
+
+.newimgceleb {
+    vertical-align: middle;
+    border-style: none;
+    width: 64rem;
 }

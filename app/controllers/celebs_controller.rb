@@ -1,6 +1,7 @@
 class CelebsController < ApplicationController
     
     skip_before_action :authenticate_user!, :raise => false
+    before_action :set_celeb, only: [:show]
     http_basic_authenticate_with :name => 'FelixxFel', :password => 'Jordanshacker1710.shivflex.2020', only: :new
 
     def index

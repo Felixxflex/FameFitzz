@@ -2,9 +2,9 @@
   <div class="particle particle-1"></div>
 </div>
 
-<h1 class="h1-show"><%= @celeb.name %></h1>
+<h1 class="h1-show"><%= @celeb.name%></h1>
 
-<h2 class="h2-show"><strong><%= @celeb.name %></strong> posted this the <strong><%= @celeb.date %></h2></strong>
+<h2 class="h2-show"><strong><%= @celeb.name%></strong> posted this the <strong><%= @celeb.date %></h2></strong>
 
 
 
@@ -14,7 +14,7 @@
 <div class="row">
 <div class="col-lg-12">
     <% if @celeb.photo.attached? %>
-    <%= cl_image_tag @celeb.photo.key, class: "d-block w-100 h-100", crop: 'fill' %>
+    <%= cl_image_tag @celeb.photo.key, class: "newimgceleb", crop: 'fill' %>
     <% end %>
 </div>
 </div>
