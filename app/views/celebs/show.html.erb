@@ -57,3 +57,43 @@
 
 <%= auto_link(@celeb.description_link8) %>
 
+
+
+<h2 class="h2-show">Other stuff you could be also interested in :</h2>
+
+
+<div class="offers index">
+        
+     
+        <div class="mx-auto">
+            <div class="row">
+            
+          
+            <div  class="celebrang">
+            <% if @celeb.photo.attached? %>
+            <%= cl_image_tag @celeb.photo.key, crop: :scale, class: "indexpics2" %>
+            <% end %>
+            </div>
+            <div class="title-info">
+              <div class="card-title" style="margin-bottom: 5px">
+                <h6 class="heading" style="color: black;"><%= link_to celeb_path(@celeb) do %>
+                  <%= @celeb.name %>
+                  <% end %></h6>
+                </div>
+                <div class="offer-details">
+                 <span class="badge badge-pill badge-dark ml-1 p-2"><%=@celeb.date%></span>
+               
+                 
+                </div>
+              </div>
+            </div>
+     
+        
+             
+               
+            
+          </div>
+        
+        </div>
+
+     
