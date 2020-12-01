@@ -24,6 +24,10 @@ gem 'simple_form'
 gem "mini_magick"
 gem 'ransack'
 
+
+gem 'carrierwave'
+gem 'jquery-rails'
+
 gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'lock'

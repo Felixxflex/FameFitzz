@@ -6,8 +6,8 @@
         <%= f.input :name %>
         <%= f.label :date, class: 'text-white' %>
         <%= f.date_field :date? %>
-        <%= f.label :photo, class: 'text-white' %>
-        <%= f.file_field :photo,  class: 'form-control', direct_upload: true %>
+        <%= f.label :images, class: 'text-white' %>
+        <%= f.file_field :images, multiple: true %>
         <%= f.label :shop_title, class: 'text-white' %>
         <%= f.text_field :shop_title %>
         <%= f.label :description, class: 'text-white' %>
