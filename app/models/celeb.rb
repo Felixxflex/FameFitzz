@@ -1,9 +1,9 @@
 class Celeb < ApplicationRecord
-has_one_attached :photo
-
-validates :name, presence: true
-validates :date, presence: true
-
+  
+  validates :name, presence: true
+  validates :date, presence: true
+  
+  has_many_attached :photos
 
 
     include PgSearch::Model

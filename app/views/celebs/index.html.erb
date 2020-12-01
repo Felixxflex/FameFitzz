@@ -47,16 +47,17 @@
 
      
      <div class="offers index">
-        <% @celebs.reverse.each do |celeb| %>
      
+        <%@celebs.each do |celeb|%>
+        
         <div class="mx-auto">
             <div class="row">
             
           
             <div  class="celebrang">
-            <% if celeb.photo.attached? %>
-            <%= cl_image_tag celeb.photo.key, crop: :scale, class: "indexpics" %>
-            <% end %>
+           
+            <%= cl_image_tag celeb.photos.first.key, crop: :fill, class: "indexpics"%>
+           
             </div>
             <div class="title-info">
               <div class="card-title" style="margin-bottom: 5px">
@@ -64,10 +65,11 @@
                   <%= celeb.name %>
                   <% end %></h6>
                 </div>
+        
                 <div class="offer-details">
                  <span class="badge badge-pill badge-dark ml-1 p-2"><%=celeb.date%></span>
                
-                 
+                 <%end%>
                 </div>
               </div>
             </div>
@@ -77,7 +79,6 @@
                
             
           </div>
-        <%end%>
         </div>
 
      

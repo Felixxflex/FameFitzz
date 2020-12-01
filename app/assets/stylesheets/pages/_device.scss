@@ -4,6 +4,9 @@
     align-items: center;
     padding-top: 100px;
     min-height: 80vh;
+    margin-top: 6rem;
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1606681346/will-breen-k_6KqocHy6o-unsplash_m7w7sn.jpg');
+    background-size: cover;
     // background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     // background-size: cover;
     // background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
@@ -13,7 +16,7 @@
 }
 
 .device-container {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     min-width: 300px;
     margin-bottom: 50px;
@@ -106,55 +109,45 @@
     color: black;
 }
 
-// corner gradients
-.gradient-topleft {
-    background: linear-gradient(165deg, rgba(63, 94, 251, 1) 6%, rgba(252, 70, 107, 1) 23%, white 23%, white);
+label {
+    display: inherit;
+    margin-bottom: 0.5rem;
+    color: whitesmoke;
 }
 
-.gradient-bottomright {
-    background: linear-gradient(170deg, white, white 85%, rgba(252, 70, 107, 1) 85%, rgba(63, 94, 251, 1));
+#user_email {
+    width: 19rem;
 }
 
-h2.profile_signup-developer {
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(165deg, white 42%, #242a2e 24%);
+#user_full_name {
+    width: 19rem;
 }
 
-h2.profile_signup-business {
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(165deg, white 38%, #242a2e 24%);
+#user_username {
+    width: 19rem;
 }
 
-h2.user-edit-title {
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(165deg, white 51%, #242a2e 24%);
+#user_password {
+    width: 19rem;
 }
 
-h2.user-edit-title.business {
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(165deg, white 42%, #242a2e 24%);
+#user_password_confirmation {
+    width: 19rem;
 }
 
-.form {
-    background: #fff;
-    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
-    border-radius: 30px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    left: 0;
-    right: 0;
-    position: relative;
-    border-top: 5px solid #0e3721;
-    /* z-index: 1; */
-    animation: bounce 1.5s infinite;
-    margin-top: -24rem;
-    height: 23rem;
-    /* height: 23rem; */
+.mb-4 {
+    font-family: 'Syne Mono', monospace;
+}
+
+p {
+    font-family: 'Syne Mono', monospace;
+}
+
+.pageTitle1 {
+    font-family: 'Syne Mono', monospace;
+    color: whitesmoke;
+}
+
+.separator {
+    color: whitesmoke;
 }

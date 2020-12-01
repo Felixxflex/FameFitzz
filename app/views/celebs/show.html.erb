@@ -11,10 +11,12 @@
 
 
 <div class="img-show">
+<%@celeb.photos.each_with_index do |photo, index|%>
+<%= index.zero? ? 'active' : '' %>
 <div class="row">
 <div class="col-lg-12">
-    <% if @celeb.photo.attached? %>
-    <%= cl_image_tag @celeb.photo.key, class: "newimgceleb", crop: 'fill' %>
+    <% if @celeb.photos.attached? %>
+    <%= cl_image_tag photo.key, class: "newimgceleb", crop: 'fill' %>
     <% end %>
 </div>
 </div>
@@ -70,8 +72,8 @@
             
           
             <div  class="celebrang">
-            <% if @celeb.photo.attached? %>
-            <%= cl_image_tag @celeb.photo.key, crop: :scale, class: "indexpics2" %>
+            <% if @celeb.photos.attached? %>
+            <%= cl_image_tag photo.key, crop: :scale, class: "indexpics2"%>
             <% end %>
             </div>
             <div class="title-info">
@@ -90,7 +92,7 @@
      
         
              
-               
+               <%end%>
             
           </div>
         
