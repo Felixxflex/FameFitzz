@@ -6,9 +6,7 @@
       <div class="offers-index-searchbarbut">
 
 
-<div class="animation-wrapper">
-  <div class="particle particle-1"></div>
-</div>
+
 
  
 <div class="container">
@@ -46,45 +44,42 @@
 </div>
 
      
-     
-     <div class="offers index">
-        <% @celebs.reverse.each do |celeb| %>
-     
+      <div class="offers index">
+        <%@celebs.each do |celeb|%>
         <div class="mx-auto">
-            <div class="row">
-          
+            <div class="row ">
+            
             <div  class="celebrang">
-            <% if celeb.photo.attached? %>
-            <%= cl_image_tag celeb.photo.key, crop: :scale, class: "indexpics" %>
-            <% end %>
+           
+            <%= cl_image_tag celeb.photos.first.key, crop: :fill, class: "indexpics"%> 
+           
+           
             </div>
             <div class="title-info">
               <div class="card-title" style="margin-bottom: 5px">
                 <h6 class="heading" style="color: black;"><%= link_to celeb_path(celeb) do %>
                   <%= celeb.name %>
                   <% end %></h6>
-                </div>
-                <div class="offer-details">
-                 <span class="badge badge-pill badge-dark ml-1 p-2"><%=celeb.date%></span>
-               
                  
                 </div>
+        
+                <div class="offer-details">
+                 <span class="badge badge-pill badge-dark ml-1 p-2"><%=celeb.date%></span>
+              
+                
               </div>
             </div>
-     
-        
+            </div>
+            </div>
+              <%end%>   
+            </div>
+            </div>
+
              
                
-            
+            </div>
           </div>
-        <%end%>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
+        
 
-
-
-
+     
 
