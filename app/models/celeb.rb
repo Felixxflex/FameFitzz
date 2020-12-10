@@ -1,7 +1,7 @@
 class Celeb < ApplicationRecord
 
  
-  has_many_attached :images
+  has_many_attached :photos
   
   validates :name, presence: true
   validates :date, presence: true
