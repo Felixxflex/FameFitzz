@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_01_134944) do
+ActiveRecord::Schema.define(version: 2020_12_10_120057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,25 +39,25 @@ ActiveRecord::Schema.define(version: 2020_12_01_134944) do
   create_table "celebs", force: :cascade do |t|
     t.string "name"
     t.text "date"
+    t.string "description_link1"
+    t.string "title_link1"
+    t.string "description_link2"
+    t.string "title_link2"
+    t.string "description_link3"
+    t.string "title_link3"
+    t.string "description_link4"
+    t.string "title_link4"
+    t.string "description_link5"
+    t.string "title_link5"
+    t.string "description_link6"
+    t.string "title_link6"
+    t.string "description_link7"
+    t.string "title_link7"
+    t.string "description_link8"
+    t.string "title_link8"
+    t.string "photos", default: [], array: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "description"
-    t.string "shop_title"
-    t.string "description_link2"
-    t.string "description_link3"
-    t.string "description_link4"
-    t.string "description_link5"
-    t.string "description_link6"
-    t.string "description_link7"
-    t.string "description_link8"
-    t.string "title_link2"
-    t.string "title_link3"
-    t.string "title_link4"
-    t.string "title_link5"
-    t.string "title_link6"
-    t.string "title_link7"
-    t.string "title_link8"
-    t.string "images", default: [], array: true
   end
 
   create_table "users", force: :cascade do |t|
