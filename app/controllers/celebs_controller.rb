@@ -65,7 +65,7 @@ class CelebsController < ApplicationController
   end
   
   def celeb_params
-    params.require(:celeb).permit(:name, :date, :description, :shop_title, :description_link2, :description_link3, :description_link4, :description_link5, :description_link6, :description_link7, :description_link8, :title_link2, :title_link3, :title_link4, :title_link5, :title_link6, :title_link7, :title_link8, images: [])
+    params.require(:celeb).permit(:name, :date, :description_link1, :title_link1, :description_link2, :description_link3, :description_link4, :description_link5, :description_link6, :description_link7, :description_link8, :title_link2, :title_link3, :title_link4, :title_link5, :title_link6, :title_link7, :title_link8, photos: [])
   end
    
 end

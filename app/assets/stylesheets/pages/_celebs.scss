@@ -7,6 +7,7 @@
     font-family: 'Syne Mono', monospace;
     text-align: center;
     color: whitesmoke;
+    font-size: 6rem;
 }
 
 .h2-show {
@@ -22,7 +23,29 @@
     text-align: center;
     display: inline-block;
     color: whitesmoke;
-    margin-left: 28rem;
+    margin-left: 35rem;
+    font-size: 10rem;
+}
+
+.offers.index {
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    margin-left: -5rem
+}
+
+.title-info {
+    z-index: 100;
+    position: relative;
+    margin-left: -19rem;
+    margin-top: 24rem;
+}
+
+.indexpics {
+    height: 18rem;
+    margin-top: 5rem;
+    width: 23rem;
+    margin-bottom: 1rem;
+    margin-left: -3rem;
 }
 
 .h-100 {
@@ -64,14 +87,6 @@ a {
     margin-top: 10rem !important;
 }
 
-.indexpics {
-    height: 22rem;
-    margin-top: 5rem;
-    width: 40rem;
-    margin-bottom: 1rem;
-    margin-left: -3rem;
-}
-
 .indexpics2 {
     height: 17rem;
     margin-top: 5rem;
@@ -80,10 +95,12 @@ a {
     margin-left: 2rem;
 }
 
-.title-info {
-    margin-left: 10rem;
-    z-index: 100;
-    position: relative;
+.indexpics_nice {
+    height: 28rem;
+    margin-top: 5rem;
+    width: 40rem;
+    margin-bottom: 1rem;
+    margin-left: 0rem;
 }
 
 .heading a {
@@ -123,11 +140,10 @@ a {
     margin-top: -1rem;
 }
 
-.offers.index {
-    display: grid;
-    grid-template-columns: 650px 650px;
-}
-
+// .offers.index {
+//     display: grid;
+//     grid-template-columns: 550px 550px;
+// }
 .newimgceleb {
     vertical-align: middle;
     border-style: none;
@@ -137,4 +153,8 @@ a {
 .containerbanner {
     background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1606770172/iMac_-_1_yldbzs.png') !important;
     background-size: cover;
+}
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, 0.5);
 }
